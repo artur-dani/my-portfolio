@@ -1,3 +1,21 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": ["plugin:prettier/recommended", "next/core-web-vitals"],
+  "plugins": ["unused-imports"],
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "singleQuote": true
+      }
+    ],
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "unused-imports/no-unused-imports-ts": 2,
+    "react/react-in-jsx-scope": "off",
+    "react/no-unescaped-entities": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/prop-types": [2, { "ignore": ["children"] }],
+    "react/display-name": 0
+  }
 }
