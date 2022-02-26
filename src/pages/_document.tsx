@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
             content="My personal portfolio build with next.js (typescript) and tailwindcss"
           />
         </Head>
-        <body className="antialiased bg-grey-700">
+        <body className="antialiased bg-grey-200 dark:bg-gray-800 dark:text-gray-100">
           <Main />
           <NextScript />
         </body>
