@@ -27,6 +27,11 @@ export default class MyDocument extends Document {
             name="description"
             content="My personal portfolio build with next.js (typescript) and tailwindcss"
           />
+
+          <link
+            href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+            rel="stylesheet"
+          />
         </Head>
         <body className="antialiased bg-grey-200 dark:bg-gray-800 dark:text-gray-100">
           <Main />
